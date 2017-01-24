@@ -30,7 +30,6 @@ try {
      * Get config service for use in inline setup below
      */
     $config = $di->getConfig();
-
     /**
      * Include Autoloader
      */
@@ -45,7 +44,7 @@ try {
      * Register application modules
      */
     $application->registerModules([
-        'frontend' => ['className' => 'Phalcon\Modules\Frontend\Module'],
+        'frontend' => ['className' => 'Phalcon\Modules\Frontend\Module']
     ]);
 
     /**

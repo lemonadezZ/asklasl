@@ -1,7 +1,6 @@
 <?php
 
 $router = $di->getRouter();
-
 foreach ($application->getModules() as $key => $module) {
     $namespace = preg_replace('/Module$/', 'Controllers', $module["className"]);
     $router->add('/'.$key.'/:params', [
